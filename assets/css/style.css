@@ -36,10 +36,10 @@ nav {
   align-items: center;
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 6px 15px;
   width: 230px;
   background-color: #fff;
-  background-image: url("../images/search.svg");
+  background-image: url("../images/vector.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 20px;
