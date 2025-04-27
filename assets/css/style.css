@@ -65,11 +65,16 @@ nav {
   }
 }
 .popular {
-  max-width: 1200px;
+  max-width: 1400px;
   padding-top: 120px;
   height: 100vh;
   margin: 0 auto;
-  background-image: url("../images/bg_img_hero.svg");
+  background-image: url("../images/cafe-dir.svg");
   background-repeat: no-repeat;
   background-position: right top 40px;
+}
+.popular-text {
+  max-width: 600px;
+}
+.thumb-image {
 }
