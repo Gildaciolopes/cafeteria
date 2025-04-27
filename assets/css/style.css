@@ -64,3 +64,12 @@ nav {
     transition: 0.3s ease-in-out;
   }
 }
+.popular {
+  max-width: 1200px;
+  padding-top: 120px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("../images/bg_img_hero.svg");
+  background-repeat: no-repeat;
+  background-position: right top 40px;
+}
