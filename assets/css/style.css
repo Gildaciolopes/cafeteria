@@ -15,13 +15,15 @@
 }
 main {
   background-color: var(--quaternary-color);
+  width: 100%;
+  height: 100%;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 nav {
-  background-color: var(--quaternary-color);
+  background-color: var(--tertiary-color);
   padding: 10px 20px;
   width: 100%;
   position: fixed;
@@ -75,11 +77,11 @@ nav {
 .popular {
   max-width: 1400px;
   padding-top: 120px;
-  height: 100vh;
+  height: 60vh;
   margin: 0 auto;
   background-image: url("../images/cafe-dir.svg");
   background-repeat: no-repeat;
-  background-position: right top 40px;
+  background-position: right top 50px;
 }
 .popular-text {
   max-width: 600px;
@@ -115,5 +117,23 @@ nav {
     cursor: pointer;
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
+  }
+}
+.coffee-popular {
+  padding-left: 250px;
+  margin: 0 auto;
+
+  & h2 {
+    padding-bottom: 40px;
+    & span::before {
+      content: "";
+      position: absolute;
+      bottom: 325px;
+      width: 72px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: var(--primary-color);
+      transition: all 300ms ease-in-out;
+    }
   }
 }
