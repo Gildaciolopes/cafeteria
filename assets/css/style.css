@@ -120,8 +120,8 @@ nav {
   }
 }
 .coffee-popular {
+  max-width: 1600px;
   padding-left: 250px;
-  margin: 0 auto;
   background-image: url("../images/cafe_esq.svg");
   background-repeat: no-repeat;
   background-position: left top 20px;
@@ -137,6 +137,26 @@ nav {
       border-radius: 10px;
       background-color: var(--primary-color);
       transition: all 300ms ease-in-out;
+    }
+  }
+  & article {
+    width: 400px;
+    & .coffee-card {
+      width: 100%;
+      padding: 20px 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      border: 10px solid var(--quaternary-color);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+      & .coffee-image {
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }
