@@ -122,6 +122,9 @@ nav {
 .coffee-popular {
   padding-left: 250px;
   margin: 0 auto;
+  background-image: url("../images/cafe_esq.svg");
+  background-repeat: no-repeat;
+  background-position: left top 20px;
 
   & h2 {
     padding-bottom: 40px;
