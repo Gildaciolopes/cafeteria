@@ -5,6 +5,7 @@
   --secondary-color: #2f2105;
   --tertiary-color: #f9d9aa;
   --quaternary-color: #f6ebda;
+  --quinary-color: #ffd28f;
 }
 
 * {
@@ -119,6 +120,9 @@ nav {
     border-bottom: 2px solid var(--secondary-color);
   }
 }
+.popular-now {
+  padding-bottom: 40px;
+}
 .coffee-popular {
   max-width: 1600px;
   padding-left: 250px;
@@ -127,7 +131,6 @@ nav {
   background-position: left top 20px;
 
   & h2 {
-    padding-bottom: 40px;
     & span::before {
       content: "";
       position: absolute;
@@ -175,9 +178,28 @@ nav {
     }
   }
 }
+.coffee-text {
+  margin: 20px 10px;
+}
 .btn-card {
-  color: var(--primary-color);
-  padding: 8px 15px;
+  color: var(--quinary-color);
+  padding: 1px 15px;
   border-radius: 12px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--quinary-color);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+  }
+}
+.btn-cart {
+  margin-left: 130px;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
