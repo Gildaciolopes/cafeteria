@@ -28,6 +28,7 @@ nav {
   padding: 10px 20px;
   width: 100%;
   position: fixed;
+  z-index: 5;
 
   & ul {
     & #search-form {
@@ -124,8 +125,8 @@ nav {
   padding-bottom: 40px;
 }
 .coffee-popular {
-  max-width: 1600px;
-  padding-left: 250px;
+  width: 100%;
+  padding: 0 250px;
   background-image: url("../images/cafe_esq.svg");
   background-repeat: no-repeat;
   background-position: left top 20px;
@@ -227,6 +228,16 @@ nav {
 
   & h3 {
     margin-bottom: 20px;
+    & span::before {
+      content: "";
+      position: absolute;
+      bottom: -350px;
+      width: 118px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: var(--primary-color);
+      transition: all 300ms ease-in-out;
+    }
   }
 }
 .container-delivery {
