@@ -219,3 +219,15 @@ nav {
     object-fit: cover;
   }
 }
+.delivery {
+  margin-top: 150px;
+  margin-left: 250px;
+  max-width: 1400px;
+  height: 60vh;
+
+  & h3 {
+    margin-bottom: 20px;
+  }
+}
+.container-delivery {
+}
