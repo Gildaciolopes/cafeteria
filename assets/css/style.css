@@ -166,6 +166,12 @@ nav {
           height: 100%;
           object-fit: cover;
           border-radius: 10px;
+          transition: 0.3s all ease;
+
+          &:hover {
+            cursor: pointer;
+            transform: translate(0%, 1%) scale(1.02);
+          }
         }
         & p {
           margin: 10px 10px;
