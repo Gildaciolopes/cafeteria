@@ -129,7 +129,8 @@ nav {
 .popular-now {
   padding-bottom: 40px;
 }
-.coffee-popular {
+.coffee-popular,
+.special-menu {
   width: 100%;
   padding: 0 250px;
   background-image: url("../images/cafe_esq.svg");
@@ -323,5 +324,74 @@ nav {
     border-radius: 12px;
     border: 5px solid #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
+.special-menu {
+  background: #fff;
+  padding-top: 100px;
+
+  & h2 {
+    & span::before {
+      bottom: -1512px;
+      width: 62px;
+      height: 4px;
+    }
+  }
+  & article {
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    & .coffee-card {
+      width: 100%;
+      padding: 25px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+
+      & .coffee-image {
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          transition: 0.3s all ease;
+
+          &:hover {
+            cursor: pointer;
+            transform: translate(0%, 1%) scale(1.02);
+          }
+        }
+        & p {
+          margin: 10px 10px;
+          padding: 5px 15px;
+          background-color: #fff;
+          border-radius: 25px;
+          border: 4px solid #b5a9a2;
+          z-index: 2;
+
+          & img {
+            margin-left: 3px;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+.coffee-buttons {
+  & p {
+    margin-left: 10px;
+  }
+}
+#special-cart {
+  margin-left: 70px;
+  margin-right: 10px;
+
+  & img {
+    width: 50px;
   }
 }
