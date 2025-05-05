@@ -331,10 +331,11 @@ nav {
 .special-menu {
   background: #fff;
   padding-top: 100px;
+  margin-bottom: 100px;
 
   & h2 {
     & span::before {
-      bottom: -1512px;
+      bottom: -1558px;
       width: 62px;
       height: 4px;
     }
