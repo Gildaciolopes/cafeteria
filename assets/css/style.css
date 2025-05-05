@@ -225,7 +225,7 @@ nav {
   height: 400px;
   position: absolute;
   z-index: 0;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-left: 215px;
 
   & img {
@@ -245,7 +245,7 @@ nav {
     & span::before {
       content: "";
       position: absolute;
-      bottom: -350px;
+      bottom: -395px;
       width: 118px;
       height: 4px;
       border-radius: 10px;
@@ -284,7 +284,7 @@ nav {
     & span::before {
       content: "";
       position: absolute;
-      top: 1950px;
+      top: 1995px;
       width: 40px;
       height: 4px;
       border-radius: 10px;
