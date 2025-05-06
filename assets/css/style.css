@@ -492,3 +492,49 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.input-group {
+  margin-top: 4.5rem;
+  display: inline-flex;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+  color: #888;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subscribe-form button {
+  padding: 0 32px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/* Acessibilidade: label escondido, mas disponível para leitores de tela */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
