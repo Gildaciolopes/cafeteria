@@ -418,53 +418,65 @@ nav {
     margin-bottom: 20px;
   }
 }
+.testimonials-text {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  background-color: #ffcb7c;
+  border-radius: 12px;
+  margin-top: 210px;
+  margin-left: 60px;
+  padding: 5px;
+  align-items: start;
+  padding-left: 20px;
+  border: 6px solid #ffcb7c;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  & h3 {
+    color: var(--secondary-color);
+  }
+  & p {
+    color: var(--secondary-color);
+  }
+}
 .carousel {
   position: absolute;
-  width: 600px;
+  width: 1050px;
   overflow: hidden;
-  margin: 100px 1000px;
+  margin: 50px 800px;
+  height: 380px;
 }
 .slides {
-  display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 900px;
+  padding-bottom: 10px;
+  margin-left: 370px;
 }
 .slide {
-  min-width: 100%;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-.slide img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-.slide h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-.slide p {
-  font-size: 1rem;
-  color: #555;
+  min-width: 40%;
+  & img {
+    width: 250px;
+    height: 320px;
+    margin-bottom: 15px;
+  }
 }
 /* Dots de navegação */
 .dots {
   position: absolute;
-  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
 }
+
 .dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: var(--quaternary-color);
   cursor: pointer;
 }
+
 .dot.active {
-  background-color: #333;
+  background-color: var(--primary-color);
 }
