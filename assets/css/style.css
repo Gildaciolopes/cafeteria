@@ -468,7 +468,6 @@ nav {
   display: flex;
   gap: 8px;
 }
-
 .dot {
   width: 12px;
   height: 12px;
@@ -476,7 +475,20 @@ nav {
   background-color: var(--quaternary-color);
   cursor: pointer;
 }
-
 .dot.active {
   background-color: var(--primary-color);
+}
+.subscribe {
+  background-color: #fff;
+  width: 100%;
+  height: 60vh;
+}
+.subscribe-content {
+  margin: 0 auto;
+  padding: 140px 0;
+  width: 1400px;
+  height: 50.3vh;
+  background-image: url("../images/bg-discount.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
