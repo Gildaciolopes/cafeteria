@@ -429,8 +429,8 @@ nav {
   padding: 5px;
   align-items: start;
   padding-left: 20px;
-  border: 6px solid #ffcb7c;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 6px solid #ffe4ba;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   & h3 {
     color: var(--secondary-color);
@@ -537,4 +537,12 @@ nav {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+footer {
+  border-top: 2px solid #e5e5e5;
+  padding: 40px 0;
+
+  & h2 a {
+    color: var(--primary-color);
+  }
 }
