@@ -331,7 +331,6 @@ nav {
 .special-menu {
   background: #fff;
   padding-top: 100px;
-  margin-bottom: 100px;
 
   & h2 {
     & span::before {
@@ -396,5 +395,26 @@ nav {
 
   & img {
     width: 50px;
+  }
+}
+.testimonials {
+  padding: 100px 0;
+  background-color: #fff;
+}
+.testimonials-background {
+  width: 1190px;
+  height: 500px;
+  border-radius: 0 24px 24px 0;
+  background-image: url("../images/bg-image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonials-title {
+  margin-left: 250px;
+  height: 100%;
+  justify-content: center;
+
+  & h3 {
+    margin-bottom: 20px;
   }
 }
