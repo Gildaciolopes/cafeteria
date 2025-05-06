@@ -402,7 +402,7 @@ nav {
   background-color: #fff;
 }
 .testimonials-background {
-  width: 1190px;
+  width: 1200px;
   height: 500px;
   border-radius: 0 24px 24px 0;
   background-image: url("../images/bg-image.svg");
@@ -417,4 +417,54 @@ nav {
   & h3 {
     margin-bottom: 20px;
   }
+}
+.carousel {
+  position: absolute;
+  width: 600px;
+  overflow: hidden;
+  margin: 100px 1000px;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.slide img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.slide h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.slide p {
+  font-size: 1rem;
+  color: #555;
+}
+/* Dots de navegação */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #333;
 }
