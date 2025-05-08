@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -437,12 +436,7 @@
           >
             Subscribe to get 15% discount price
           </h2>
-          <form
-            class="subscribe-form flex justify-center"
-            action="#"
-            method="POST"
-            id="subscribeForm"
-          >
+          <form class="subscribe-form flex justify-center" id="subscribeForm">
             <label for="email" class="visually-hidden">Email address</label>
             <div class="input-group">
               <input
@@ -477,4 +471,5 @@
     </footer>
   </body>
   <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/send-email.js"></script>
 </html>
