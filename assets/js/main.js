@@ -3,16 +3,17 @@ const reveals = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
         entry.target.classList.add("visible");
         entry.target.classList.remove("disapear");
-      } else if (!entry.isIntersecting || entry.intersectionRatio < 0.3) {
+      } else if (!entry.isIntersecting || entry.intersectionRatio < 0.4) {
         entry.target.classList.add("disapear");
+        entry.target.classList.remove("visible");
       }
     });
   },
   {
-    threshold: [0.3, 0.4],
+    threshold: [0.4, 0.5],
   }
 );
 
@@ -64,3 +65,23 @@ reveals.forEach((el) => observer.observe(el));
   // Dispara auto‑slide
   startAutoSlide();
 })();
+
+document
+  .getElementById("subscribeForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // evita o reload da página
+
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value;
+
+    // mensagem personalizada
+    const mensagemPersonalizada = `Obrigado pelo cadastro, ${email}! 🎉\nEm breve você receberá nosso cupom de 15%.`;
+
+    // exibe dentro da página
+    const divMsg = document.getElementById("mensagem");
+    divMsg.textContent = mensagemPersonalizada;
+    divMsg.style.color = "#fff";
+
+    // limpar o campo após o envio:
+    emailInput.value = "";
+  });
