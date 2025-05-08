@@ -1,3 +1,22 @@
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+        entry.target.classList.add("visible");
+      } else if (!entry.isIntersecting || entry.intersectionRatio < 0.3) {
+        entry.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: [0.3, 0.4],
+  }
+);
+
+reveals.forEach((el) => observer.observe(el));
+
 (function () {
   const slides = document.querySelectorAll(".slide");
   const slidesContainer = document.querySelector(".slides");
