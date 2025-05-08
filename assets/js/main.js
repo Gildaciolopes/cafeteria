@@ -20,7 +20,7 @@
   function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
       goToSlide(currentIndex + 1);
-    }, 5000);
+    }, 3000);
   }
 
   // Reinicia o auto‑slide (após interação manual)

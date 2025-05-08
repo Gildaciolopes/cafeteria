@@ -389,7 +389,7 @@ nav {
     margin-left: 10px;
   }
 }
-#special-cart {
+.special-cart {
   margin-left: 70px;
   margin-right: 10px;
 
@@ -545,4 +545,17 @@ footer {
   & h2 a {
     color: var(--primary-color);
   }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.appear-animation {
+  animation: appear 0.5s ease-in-out;
 }
