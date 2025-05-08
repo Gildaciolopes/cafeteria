@@ -5,8 +5,9 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
         entry.target.classList.add("visible");
+        entry.target.classList.remove("disapear");
       } else if (!entry.isIntersecting || entry.intersectionRatio < 0.3) {
-        entry.target.classList.remove("visible");
+        entry.target.classList.add("disapear");
       }
     });
   },

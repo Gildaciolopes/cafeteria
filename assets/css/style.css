@@ -549,11 +549,17 @@ footer {
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s ease-out, transform 0.6s ease-out;
+  transition: all 0.6s ease-in-out;
   will-change: opacity, transform;
 }
 
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.disapear {
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  will-change: opacity, transform;
 }
