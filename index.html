@@ -471,5 +471,16 @@
     </footer>
   </body>
   <script src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/send-email.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "dWOYpwKxFm270JzLM",
+      });
+    })();
+  </script>
+  <script src="assets/js/send-email.js"></script>
 </html>
