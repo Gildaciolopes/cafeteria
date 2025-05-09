@@ -8,6 +8,18 @@
   --quinary-color: #ffd28f;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +137,9 @@ nav {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
   }
+}
+.floating {
+  animation: float 6s ease-in-out infinite;
 }
 .popular-now {
   padding-bottom: 40px;
@@ -563,6 +578,4 @@ footer {
   transform: translateY(-20px);
   transition: all 0.6s ease-in-out;
   will-change: opacity, transform;
-}
-#mensagem {
 }
