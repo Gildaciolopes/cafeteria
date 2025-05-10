@@ -26,6 +26,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 main {
   background-color: var(--quaternary-color);
   width: 100%;
@@ -456,7 +459,7 @@ nav {
 }
 .carousel {
   position: absolute;
-  width: 1050px;
+  max-width: 1050px;
   overflow: hidden;
   margin: 50px 800px;
   height: 380px;
@@ -470,8 +473,8 @@ nav {
 .slide {
   min-width: 40%;
   & img {
-    width: 250px;
-    height: 320px;
+    max-width: 250px;
+    max-height: 320px;
     margin-bottom: 15px;
   }
 }
@@ -578,4 +581,203 @@ footer {
   transform: translateY(-20px);
   transition: all 0.6s ease-in-out;
   will-change: opacity, transform;
+}
+@media (max-width: 1870px) {
+  span::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1601px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 10px 100px;
+    width: 100%;
+
+    & ul {
+      margin: 0 auto;
+
+      & li:nth-child(2) a {
+        margin-left: 380px;
+      }
+      & li:nth-child(4) a {
+        margin-right: 80px;
+      }
+      & li:nth-child(6) a {
+        display: flex;
+        padding: 0;
+        margin-right: 80px;
+      }
+    }
+  }
+  .popular {
+    margin: 0 0 40px 30px;
+    width: 100%;
+    margin: 0 auto;
+
+    & .popular-text {
+      & h1 {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  .thumb-image {
+    margin: 0 0 40px 70px;
+  }
+  .background {
+    display: none;
+  }
+  .coffee-popular,
+  .special-menu {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .popular-now {
+    margin-left: 100px;
+  }
+  .container-coffee {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  .delivery {
+    padding: 120px 0;
+
+    & h3 {
+      margin: 0 0 20px 100px;
+    }
+  }
+  .container-about {
+    height: 60vh;
+  }
+  .about {
+    max-width: 450px;
+    margin-right: 250px;
+  }
+  .above-image {
+    margin: -95px 0 0 350px;
+  }
+  .special-menu {
+    padding-top: 100px;
+  }
+  .testimonials {
+    padding: 100px 0;
+  }
+  .testimonials-background {
+    width: 1050px;
+  }
+  .testimonials-title {
+    margin-left: 100px;
+  }
+  .carousel {
+    margin: 50px 600px;
+  }
+  .subscribe {
+    background-color: #fff;
+    padding-top: 10px;
+    width: 100%;
+    height: 60vh;
+  }
+  .subscribe-content {
+    margin: 0 auto;
+    padding: 140px 0;
+    width: 1400px;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1441px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 10px 10px;
+    width: 100%;
+
+    & ul {
+      margin: 0 auto;
+      & #search-form {
+        margin-left: 0;
+      }
+      & li:nth-child(2) a {
+        margin-left: 250px;
+      }
+      & li:nth-child(4) a {
+        margin-right: 40px;
+      }
+      & li:nth-child(6) a {
+        display: flex;
+        padding: 0;
+        margin-right: 240px;
+      }
+    }
+  }
+  .popular {
+    margin: 0 0 40px 30px;
+    width: 100%;
+    margin: 0 auto;
+
+    & .popular-text {
+      & h1 {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  .thumb-image {
+    margin: 0 0 40px 70px;
+  }
+  .popular-now {
+    margin-left: 25px;
+  }
+  .container-about {
+    height: 60vh;
+  }
+  .about {
+    max-width: 450px;
+    margin-right: 180px;
+  }
+  .above-image {
+    margin: -95px 0 0 280px;
+  }
+  .special-menu {
+    padding: 100px 40px 0 40px;
+  }
+  .testimonials {
+    padding: 100px 0;
+  }
+  .subscribe-content {
+    height: 55.5vh;
+  }
+}
+@media (max-width: 1367px) {
+  nav {
+    & ul {
+      & li:nth-child(6) a {
+        margin-right: 300px;
+      }
+    }
+  }
+  .popular-text {
+    margin: 0 0 40px 30px;
+  }
+  .popular-now {
+    margin-left: 0;
+  }
+  .coffee-popular {
+    padding: 0 20px 40px 20px;
+  }
+  .subscribe-content {
+    padding: 120px 0;
+    width: 1200px;
+    height: 47.6vh;
+  }
+}
+
+@media (max-width: 1281px) {
 }
