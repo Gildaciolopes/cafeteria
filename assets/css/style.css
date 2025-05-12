@@ -861,7 +861,7 @@ footer {
     margin: -95px 0 0 200px;
   }
   .special-menu {
-    padding: 100px 210px 0 200px;
+    padding: 100px 15% 0;
   }
   .container-coffee {
     grid-template-columns: repeat(2, 1fr);
@@ -899,7 +899,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .special-menu {
-    padding: 100px 210px 0 185px;
+    padding: 100px 15% 0;
   }
   .slides {
     margin-top: 50px;
@@ -1136,6 +1136,78 @@ footer {
 }
 
 @media (max-width: 481px) {
+  nav {
+    & ul {
+      & #search-form {
+        & input {
+          width: 180px;
+        }
+      }
+      & li:nth-child(2) a {
+        display: none;
+      }
+      & li:nth-child(3) a {
+        display: none;
+      }
+      & li:nth-child(4) a {
+        display: none;
+      }
+      & li:nth-child(6) a {
+        margin-right: 760px;
+      }
+    }
+  }
+  .popular {
+    background-size: 40%;
+    height: 40vh;
+    & .popular-text {
+      & h1 {
+        font-size: 28px;
+        margin: 0 0 10px 0;
+      }
+      & p {
+        font-size: 11px;
+      }
+      & .buttons {
+        display: none;
+      }
+    }
+  }
+  .delivery {
+    height: 150vh;
+
+    & h3 {
+      font-size: 20px;
+      padding-left: 10%;
+    }
+  }
+  .grid-delivery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .above-image {
+    width: 300px;
+    margin: -40% 0 0 20%;
+  }
+  .about {
+    max-width: 300px;
+    margin-right: 15%;
+    margin-top: 40%;
+
+    & p {
+      font-size: 12px;
+    }
+  }
+  .container-about {
+    height: 70vh;
+  }
+  .special-menu {
+    padding: 10% 10% 0 9%;
+
+    & h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 426px) {
