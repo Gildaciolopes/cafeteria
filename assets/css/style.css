@@ -1153,7 +1153,7 @@ footer {
         display: none;
       }
       & li:nth-child(6) a {
-        margin-right: 760px;
+        margin-right: 470px;
       }
     }
   }
@@ -1208,13 +1208,141 @@ footer {
       text-align: center;
     }
   }
+  .testimonials-background {
+    width: 350px;
+    height: 40vh;
+  }
+  .testimonials-title {
+    margin-left: 30px;
+
+    & h3 {
+      font-size: 22px;
+    }
+    & p {
+      font-size: 14px;
+    }
+  }
+  .carousel {
+    margin: 200px -10px;
+  }
+  .subscribe {
+    height: 50vh;
+  }
+  .subscribe-content {
+    margin-top: 20vh;
+    padding: 2.5rem 0 0 0;
+    width: 390px;
+    height: 22vh;
+    background-position: center;
+    border-radius: 15px;
+
+    & h2 {
+      font-size: 16px;
+    }
+    & .input-group {
+      margin-top: 1.5rem;
+      max-width: 280px;
+      border: 3px solid #fff;
+    }
+    & #mensagem {
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  }
+  .subscribe-form input[type="email"] {
+    font-size: 12px;
+  }
+  .subscribe-form input[type="email"]::placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form button {
+    font-size: 12px;
+    padding: 0 27px;
+  }
 }
 
 @media (max-width: 426px) {
+  nav {
+    & ul {
+      & li:nth-child(6) a {
+        margin-right: 500px;
+      }
+    }
+  }
+  .popular {
+    height: 40vh;
+    & .popular-text {
+      & h1 {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+      }
+      & p {
+        font-size: 8px;
+      }
+      & .buttons {
+        display: none;
+      }
+    }
+  }
+  .above-image {
+    width: 300px;
+    margin: -40% 0 0 16%;
+  }
+  .about {
+    max-width: 300px;
+    margin-right: 10%;
+    margin-top: 50%;
+
+    & p {
+      font-size: 12px;
+    }
+  }
+  .special-menu {
+    padding: 10% 10% 0 3%;
+
+    & h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 376px) {
-}
-
-@media (max-width: 321px) {
+  nav {
+    & ul {
+      & #search-form {
+        & input {
+          width: 130px;
+          font-size: 12px;
+        }
+      }
+      & li:nth-child(6) a {
+        margin-right: 0;
+      }
+    }
+  }
+  .special-menu {
+    display: none;
+  }
+  .above-image {
+    width: 280px;
+    margin: -40% 0 0 14%;
+  }
+  .about {
+    max-width: 280px;
+    margin-right: 8%;
+    margin-top: 52%;
+  }
+  .testimonials {
+    display: none;
+  }
+  .subscribe {
+    height: 30vh;
+  }
+  .subscribe-content {
+    margin-top: 5vh;
+    padding: 1.5rem 0 0 0;
+    width: 320px;
+    height: 20vh;
+  }
 }
